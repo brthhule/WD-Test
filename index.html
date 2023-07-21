@@ -9,8 +9,10 @@
 </head>
 
 <body>
-    <h1>This is a website</h1>
+    <h1 id = "headerThing">Welcome to <dfn id = "PandaTech" title = "PandaTech Incorporated">PandaTech</dfn>!</h1>
 
+	<p><abbr title = "PandaTech">PT</abbr> stands for PandaTech</p>
+	<p>See more information at <a href = "PandaTech"> PT</a></p>
     <dl style="display: inline; margin-left: 10%">
         <dt>Bamboo</dt>
         <dd>
@@ -37,7 +39,7 @@
             <option value="Mercedes">
         </datalist>
 
-        <button onclick="datalistcall()" type="button">Click Here</button>
+        <button id = "buttonProp" onclick="datalistcall()" type="button">Click Here</button>
 
     </form>
 
@@ -70,8 +72,11 @@
         color: rgb(45, 46, 109);
     }
 
-    #titlePage {
-        color: blue;
+    #headerThing {
+        color: orange;
     }
+	#buttonProp {
+		color: red;
+	}
 </style>
 </html>
