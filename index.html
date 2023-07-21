@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<meta charset = "UTF-8">
-	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-	<!--Start content here:-->
-	<comment> This is a comment</comment>
-	<head>
-		<title>Web Dev Practice</title>
-	</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Start content here:-->
+<comment> This is a comment</comment>
+<head>
+    <title id="titlePage">Web Dev Practice</title>
+</head>
 
-	<body>
-		<h1>Why Am I Doing This?</h1>
-		<p>Answer: So I can make PandaTech!</p>
-			<ul>
-				<li><data value="049">This is part of a bullet point</data></li>
-			</ul>
+<body>
+    <h1>This is a website</h1>
 
-	<form> <!--Creates a form/data entry thing-->
-		<label>This is a text drop down menu</label>
-		<input list = "cars" id = "carsInput"> <!--Defines the input for the list to be of type "cars"-->
-		<!--Drop down menu options-->
-		<datalist id="cars">
-			<option value = "BMW">
-			<option value = "Mercedes">
-		</datalist>
+    <dl style="display: inline; margin-left: 10%">
+        <dt>Bamboo</dt>
+        <dd>
+            A news sharing site
+        </dd>
 
-        <button onclick = "datalistcall()" type = "button">Click Here</button>
-        
-	</form>
+        <dt>Alarm</dt>
+        <dd>A math solving based alarm clock</dd>
+    </dl>
+
+    <p>Answer: So I can make PandaTech!</p>
+    <ul>
+        <li><data value="049">This is part of a bullet point</data></li>
+    </ul>
 
 
+    <form>
+        <!--Creates a form/data entry thing-->
+        <label>This is a text drop down menu</label>
+        <input list="cars" id="carsInput"> <!--Defines the input for the list to be of type "cars"-->
+        <!--Drop down menu options-->
+        <datalist id="cars">
+            <option value="BMW">
+            <option value="Mercedes">
+        </datalist>
 
-    <p id = "output"></p>
+        <button onclick="datalistcall()" type="button">Click Here</button>
+
+    </form>
+
+
+
+    <p id="output"></p>
 
 
 
 
 
     <!--Display selected option-->
-    <script type = "text/javascript">
-        function datalistcall()
-        {
+    <script type="text/javascript">
+        function datalistcall() {
             var o1 = document.getElementById("carsInput").value;
             document.getElementById("output").innerHTML = "You select " + o1 + " option";
         }
@@ -50,12 +62,16 @@
 
 
 
-		
-	</body>
 
-	<style>
-        #carsInput {
-            color: rgb(45, 46, 109);
-        }
-    </style>
+</body>
+
+<style>
+    #carsInput {
+        color: rgb(45, 46, 109);
+    }
+
+    #titlePage {
+        color: blue;
+    }
+</style>
 </html>
