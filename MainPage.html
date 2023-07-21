@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Start content here:-->
+<comment> This is a comment</comment>
+<head>
+    <title id="titlePage">Web Dev Practice</title>
+</head>
+
+<body>
+    <h1 id = "headerThing">Welcome to <dfn id = "PandaTech" title = "PandaTech Incorporated">PandaTech</dfn>!</h1>
+
+	<p><abbr title = "PandaTech">PT</abbr> stands for PandaTech</p>
+	<p>See more information at <a href = "PandaTech"> PT</a></p>
+    <dl style="display: inline; margin-left: 10%">
+        <dt>Bamboo</dt>
+        <dd>
+            A news sharing site
+        </dd>
+
+        <dt>Alarm</dt>
+        <dd>A math solving based alarm clock</dd>
+    </dl>
+
+    <p>Answer: So I can make PandaTech!</p>
+    <ul>
+        <li><data value="049">This is part of a bullet point</data></li>
+    </ul>
+
+
+    <form>
+        <!--Creates a form/data entry thing-->
+        <label>This is a text drop down menu</label>
+        <input list="cars" id="carsInput"> <!--Defines the input for the list to be of type "cars"-->
+        <!--Drop down menu options-->
+        <datalist id="cars">
+            <option value="BMW">
+            <option value="Mercedes">
+        </datalist>
+
+        <button id = "buttonProp" onclick="datalistcall()" type="button">Click Here</button>
+
+    </form>
+
+
+
+    <p id="output"></p>
+
+
+
+
+
+    <!--Display selected option-->
+    <script type="text/javascript">
+        function datalistcall() {
+            var o1 = document.getElementById("carsInput").value;
+            document.getElementById("output").innerHTML = "You select " + o1 + " option";
+        }
+    </script>
+
+    <!--This is a comment-->
+
+
+
+
+
+</body>
+
+<style>
+    #carsInput {
+        color: rgb(45, 46, 109);
+    }
+
+    #headerThing {
+        color: orange;
+    }
+	#buttonProp {
+		color: red;
+	}
+</style>
+</html>
